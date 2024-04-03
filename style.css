@@ -1,0 +1,109 @@
+body {
+  background-color: #191919;
+}
+
+#main-div {
+  box-shadow: 0px 2px 50px -20px blue;
+  border-radius: 30px;
+  width: fit-content;
+  padding-inline: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+#h-1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 2em;
+  border-left: 5px dotted blue;
+  border-right: 5px dotted blue;
+}
+
+#h-3 {
+  color: blue;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: #303030 solid 1px;
+  padding-block-end: 20px;
+}
+
+.labels {
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+}
+.inp {
+  font-family: cursive;
+  font-size: 20px;
+  color: white;
+  background-color: #303030;
+  text-align: center;
+  height: 1.5em;
+  width: 230px;
+  border-radius: 60px;
+  padding: 10px;
+  border-style: none;
+  margin-bottom: 15px;
+  box-shadow: 0px 9px 20px 5px #101010;
+}
+
+#butt {
+  background-color: blue;
+  height: 40px;
+  width: 120px;
+  font-family: cursive;
+  font-size: 20px;
+  border-style: none;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px -5px blue;
+}
+
+#pass-forgot {
+  color: blue;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+.inp:hover {
+  animation: inpshade 0.5s forwards;
+}
+
+#butt:hover {
+  animation: border-change 0.5s forwards;
+}
+
+#butt:active {
+  background-color: #598bff;
+}
+
+/*Animation Button */
+
+@keyframes border-change {
+  0% {
+    border-radius: 30px;
+  }
+  50% {
+    border-radius: 10px;
+    background-color: #0551ff;
+  }
+  100% {
+    border-radius: 10px;
+    background-color: #0551ff;
+  }
+}
+@keyframes inpshade {
+  0% {
+    background-color: #303030;
+  }
+  50% {
+    background-color: #404040;
+    border-radius: 20px;
+  }
+  100% {
+    background-color: #505050;
+    border-radius: 10px;
+  }
+}
